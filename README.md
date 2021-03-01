@@ -82,7 +82,7 @@ The datasets are not included in the repository due to copyrights, but their des
 
 ### Particles Train Set:
 #### Raw Input Images: 
-The synthetic particles' raw input images used to train the Classifier CNN, Binary Segmentation Simple-UNet, and YOLOv5, were obtained from the following research article [A large dataset of synthetic SEM images of powder materials and their ground truth 3D structures](https://www.sciencedirect.com/science/article/pii/S2352340916306382)
+The synthetic particles' raw input images used to train the Classifier CNN, Binary Segmentation Simple-UNet, and YOLOv5, were obtained from the following research article by Brian L. DeCost, and Elizabeth A.Holm [A large dataset of synthetic SEM images of powder materials and their ground truth 3D structures](https://www.sciencedirect.com/science/article/pii/S2352340916306382)
 
 
       @article{DECOST2016727,
@@ -103,7 +103,7 @@ The open source dataset can be found in the Mendeley Database link [Mendeley Dat
 
 ### Particles Label Set:
 #### Binary Segmentation Labels:
-Using the Raw Input Images of Particles, the following research article, which uses the Watershed City-Block Distance Method (WCBD) can be used along with MATLAB to generate the corresponding binary segmentations: [An automated simple algorithm for realistic pore network extraction from micro-tomography images](https://www.sciencedirect.com/science/article/pii/S0920410514002691)
+Using the Raw Input Images of Particles, the following research article by Arash Rabbani, Saeid Jamshidi, Saeed Salehi, which uses the Watershed City-Block Distance Method (WCBD) can be used along with MATLAB to generate the corresponding binary segmentations: [An automated simple algorithm for realistic pore network extraction from micro-tomography images](https://www.sciencedirect.com/science/article/pii/S0920410514002691)
 
       @article{RABBANI2014164,
             title = {An automated simple algorithm for realistic pore network extraction from micro-tomography images},
@@ -151,7 +151,7 @@ NOTE: These high-resolution images were resized to 2048x2048, and cropping each 
       
   
 #### RGB Segmentation and Size Distribution Labels :
-Using the Raw Input Images (see above), the following research articles and references, which use and justify the Point-Sampled Intercept Length Method can be used along with MATLAB to generate the corresponding RGB segmentations and grain boundaru size distribution:
+Using the Raw Input Images (see above), the following ASTM reference, which uses and justify the Point-Sampled Intercept Length Method can be used along with MATLAB to generate the corresponding RGB segmentations and grain boundary size distribution:
 
 ASTM Standard Point-Sampled Intercept Length Method:
 
@@ -169,7 +169,7 @@ ASTM Standard Point-Sampled Intercept Length Method:
    
    
    
-Point-Sampled Intercept Length Method Research Articles: 
+Point-Sampled Intercept Length Method research articles by Pauli Lehto, Heikki Remes, Tapio Saukkonen, Teemu Sarikka, Hannu Hänninen and Jani Romanoff: 
 
       @article{Lehto2014Influence,
             title = "Influence of grain size distribution on the Hall–Petch relationship of welded structural steel",
@@ -197,7 +197,7 @@ Point-Sampled Intercept Length Method Research Articles:
             author = "Pauli Lehto and Heikki Remes and Teemu Sarikka and Jani Romanoff"
       }
 
-Check out the open source MATLAB Codes by Pauli Lehto, Heikki Remes, Tapio Saukkonen, Hannu Hänninen and Jani Romanoff [PSILM](https://wiki.aalto.fi/display/GSMUM/Characterization+of+local+grain+size+variation)
+Check out the open source MATLAB Codes by Pauli Lehto, Heikki Remes, Tapio Saukkonen, Teemu Sarikka, Hannu Hänninen and Jani Romanoff [PSILM](https://wiki.aalto.fi/display/GSMUM/Characterization+of+local+grain+size+variation)
 
 
 
