@@ -82,7 +82,7 @@ The datasets are not included in the repository due to copyrights, but their des
 
 ### Particles Train Set:
 #### Raw Input Images: 
-The particles' raw input images used to train the Classifier CNN, Binary Segmentation Simple-UNet, and YOLOv5, were obtained from the paper [A large dataset of synthetic SEM images of powder materials and their ground truth 3D structures](https://www.sciencedirect.com/science/article/pii/S2352340916306382)
+The synthetic particles' raw input images used to train the Classifier CNN, Binary Segmentation Simple-UNet, and YOLOv5, were obtained from the following research article [A large dataset of synthetic SEM images of powder materials and their ground truth 3D structures](https://www.sciencedirect.com/science/article/pii/S2352340916306382)
 
 
       @article{DECOST2016727,
@@ -101,9 +101,9 @@ The particles' raw input images used to train the Classifier CNN, Binary Segment
 
 The open source dataset can be found in the Mendeley Database link [Mendeley Data: Synthetic Particles](https://data.mendeley.com/datasets/tj4syyj9mr/1): 
 
-
+### Particles Label Set:
 #### Binary Segmentation Labels:
-Using the Raw Input Images of Particles, the following research article, which uses the Watershed City-Block Distance method can be used in MATLAB to generate the corresponding binary segmentations
+Using the Raw Input Images of Particles, the following research article, which uses the Watershed City-Block Distance Method (WCBD) can be used along with MATLAB to generate the corresponding binary segmentations: [An automated simple algorithm for realistic pore network extraction from micro-tomography images](https://www.sciencedirect.com/science/article/pii/S0920410514002691)
 
       @article{RABBANI2014164,
             title = {An automated simple algorithm for realistic pore network extraction from micro-tomography images},
@@ -120,8 +120,85 @@ Using the Raw Input Images of Particles, the following research article, which u
             abstract = {Using 3-D scanned data to analyze and extract pore network plays a vital role in investigation of porous media׳s characteristics. In this paper, a new simple method is developed to detect pores and throats for analyzing the connectivity and permeability of the network. This automated method utilizes some of the common and well-known image processing functions which are widely accessible by researchers and this has led to an easy algorithm implementation. In this method, after polishing and quality control of images, using city-block distance function and watershed segmentation algorithm, pores and throats are detected and 3-D network is produced. This method can also be applied on 2-D images to extract some characteristics of the porous media such as pore and throat size distribution. The results of network extraction were verified by comparing the distribution of coordination number with a prevalent method in the literature.}
       }
 
+Check out the following Tutorials provided by the author to implement the WCBD algorithm and obtain the label set of binary segmentations: [Porous Material 101 via MATLAB by Arash Rabbani](https://www.youtube.com/playlist?list=PLaYes2m4FtR3DBM7TIb6oOZYI-tG4fHLd)      
+
+
+#### Bounding Boxes Labels:
+In order to obtain the bounding boxes used to train the YOLOv5 algorithm, the MATLAB code provided above for the WCBD method was adjusted to output and save the detected x and y coordinates of the binary segmentations along with their diameters/radii values. Check out the attached Tutorials above for more details on generating the bounding boxes
+
+A very important point to make is that the online open source computer vision tool ["Roboflow.ai"](https://roboflow.com/), was used to generate the bounding boxes label set in the format required by YOLOv5. This dataset is not included due to copyrights. 
+
+
+### Grain Boundaries Train Set:
+#### Raw Input Images: 
+The SLM 316L stainless steel grain boundaries' raw input images used to train the Classifier CNN, RGB Segmentation networks (U-Net, ResNet-Unet, and DENSE-UNet), and Regression CNNs, were obtained from the following research article by Xinwei Li and Habimana Jean Willy [Selective laser melting of stainless steel and alumina composite: Experimental and simulation studies on processing parameters, microstructure and mechanical properties](https://www.sciencedirect.com/science/article/pii/S0264127518301412)
+
+NOTE: These high-resolution images were resized to 2048x2048, and cropping each section into separate 256x256 images, a total of 3776 training images was obtained
+
+      @article{LI20181,
+            title = {Selective laser melting of stainless steel and alumina composite: Experimental and simulation studies on processing parameters, microstructure and mechanical properties},
+            journal = {Materials & Design},
+            volume = {145},
+            pages = {1-10},
+            year = {2018},
+            issn = {0264-1275},
+            doi = {https://doi.org/10.1016/j.matdes.2018.02.050},
+            url = {https://www.sciencedirect.com/science/article/pii/S0264127518301412},
+            author = {Xinwei Li and Habimana Jean Willy and Shuai Chang and Wanheng Lu and Tun Seng Herng and Jun Ding},
+            keywords = {Selective laser melting, Stainless steel, Alumina, Finite element modeling, Metal matrix composite, Microlattice},
+            abstract = {Metal matrix composites (MMC) find their uses as high performance materials. The selective laser melting (SLM) of a 316L stainless steel and Al2O3 MMC is presented in this paper. Agglomerate Al2O3 particles had shown to be an adequate powder choice with uniform dispersions in the resultant prints. Relative density, phase, microstructure and mechanical properties of all 1-, 2-, 3-wt% doped products were carefully analyzed. Finite element modeling model was developed to study the associated multi-physics phenomena with high efficiency for process parameter optimization. It is found that the change in SLM temperature profile with Al2O3 addition is mainly due to the change in optical properties rather than thermal. Hence, both simulation and experimentation revealed that higher laser energy input is needed for optimized melting. In addition, cellular dendrites were found to coarsen with increasing Al2O3 addition due to the decreased cooling rate. With hard particle strengthening effects, all samples showed improved hardness with 3-wt% up to 298HV and 1-wt% samples showing much improved yielding and tensile stresses of 579 and 662MPa from 316L. Corresponding microlattice built this way demonstrated a 30 and 23% increase in specific strength and energy absorption from that of 316L too.}
+      }
+      
+  
+#### RGB Segmentation and Size Distribution Labels :
+Using the Raw Input Images (see above), the following research articles and references, which use and justify the Point-Sampled Intercept Length Method can be used along with MATLAB to generate the corresponding RGB segmentations and grain boundaru size distribution:
+
+ASTM Standard Point-Sampled Intercept Length Method:
+
+      @book{ASTM2015Standard,
+            title         = "{Standard test methods for determining average grain size
+                             using semiautomatic and automatic image analysis}",
+            journal       = "{ASTM Journal}",                       
+            publisher     = "ASTM",
+            author        = "American Society for Testing and Materials. Philadelphia",
+            address       = "West Conshohocken, PA",
+            year          = "2015",
+            url           = "http://cds.cern.ch/record/1463023",
+            note          = "Reapproved in 2015",
+      }
+   
+   
+   
+Point-Sampled Intercept Length Method Research Articles: 
+
+      @article{Lehto2014Influence,
+            title = "Influence of grain size distribution on the Hall–Petch relationship of welded structural steel",
+            journal = "Materials Science and Engineering: A",
+            volume = "592",
+            pages = "28 - 39",
+            year = "2014",
+            issn = "0921-5093",
+            doi = "https://doi.org/10.1016/j.msea.2013.10.094",
+            url = "http://www.sciencedirect.com/science/article/pii/S0921509313012094",
+            author = "Pauli Lehto and Heikki Remes and Tapio Saukkonen and Hannu Hänninen and Jani Romanoff",
+            keywords = "Grain size, Hall–Petch relationship, Hardness, Strength, Steel, Welding"
+      }
       
       
+      @article{Lehto2016Characterization,
+            title = "Characterisation of local grain size variation of welded structural steel",
+            journal = "Welding in the World",
+            volume = "60",
+            pages = "673 - 688",
+            year = "2016",
+            issn = "1878-6669",
+            doi = "10.1007/s40194-016-0318-8",
+            url = "https://doi.org/10.1007/s40194-016-0318-8",
+            author = "Pauli Lehto and Heikki Remes and Teemu Sarikka and Jani Romanoff"
+      }
+
+Check out the open source MATLAB Codes by Pauli Lehto, Heikki Remes, Tapio Saukkonen, Hannu Hänninen and Jani Romanoff [PSILM](https://wiki.aalto.fi/display/GSMUM/Characterization+of+local+grain+size+variation)
+
 
 
 ```python
