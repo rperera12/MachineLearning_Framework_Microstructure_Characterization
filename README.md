@@ -2,11 +2,17 @@
 If you find this repository useful and would like to find out more about the implementation, please refer to our manuscript 
 
 @misc{perera2021optimized,
+
       title={Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images}, 
+      
       author={Roberto Perera and Davide Guzzetti and Vinamra Agrawal},
+      
       year={2021},
+      
       eprint={2101.06474},
+      
       archivePrefix={arXiv},
+      
       primaryClass={eess.IV}
 } 
 
