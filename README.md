@@ -1,7 +1,7 @@
 # Microstructure Characterization Framework for Pores/Particles & Grain Boundaries
-If you find this repository useful and would like to find out more about the implementation, please refer to our manuscript 
+If you find this repository useful and would like to find out more about the implementation, please refer to our manuscript  [link to Google!](https://arxiv.org/abs/2101.06474)
 
-misc{perera2021optimized,
+      @misc{perera2021optimized,
 
       title={Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images}, 
       
@@ -14,7 +14,7 @@ misc{perera2021optimized,
       archivePrefix={arXiv},
       
       primaryClass={eess.IV}
-} 
+      } 
 
 ## Models:
 
