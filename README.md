@@ -1,5 +1,5 @@
 # Microstructure Characterization Framework for Pores/Particles & Grain Boundaries
-If you find this repository useful and would like to find out more about the implementation, please refer to our manuscript  [link to Google!](https://arxiv.org/abs/2101.06474)
+If you find this repository useful and would like to find out more about the implementation, please refer to our manuscript  [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474)
 
       @misc{perera2021optimized,
 
@@ -39,7 +39,17 @@ Used to obtain the y-axis for the grain boundary size distribution histograms
 NOTE: Found in models.py
 Used for RGB segmentations of grain boundaries
 
-https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/
+
+### YOLOv5:
+NOTE: The YOLOv5 algorithm is not included in models.py due to copyright. 
+      Please refer to the following link for a step-by-step tutorial by the authors: [YOLOv5 Step-by-Step Tutorial](https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/)
+      Also, you can find and copy the Google Colab Notebook used of YOLOv5 in the following link:  [YOLOv5 Notebook](https://colab.research.google.com/drive/1gDZ2xcTOgR39tGGs-EZ6i3RTs16wmzZQ)
+      The trained weights for the YOLOv5 used in the prediction of Pores/Particles are included in the "Pretrained_weights" directory.
+      This file must be loaded in line !python detect.py --weights runs/train/yolov5s_results/weights/best.pt --img 416 --conf 0.4 --source ../test/images
+      
+      
+      
+
 
 ```python
 import cv2
@@ -58,30 +68,4 @@ combined = plot_masks(192, 192, K, channel)
 
 
 ```
-# Results 
 
-### Original Segmented Image
-
-![Original Segmented Image](/images/original.png)
-Format: ![Original Segmented Image](url)
-
-### Separated Channels/Classes/Colors using Clusters = 13
-
-![1st Channel Segmented Image](/images/channel1.png) Format: ![Channel 1](url)  ![2nd Channel Segmented Image](/images/channel2.png) Format: ![Channel 2](url)
-
-![3rd Channel Segmented Image](/images/channel3.png) Format: ![Channel 3](url)  ![4th Channel Segmented Image](/images/channel4.png) Format: ![Channel 4](url)
-
-![5th Channel Segmented Image](/images/channel5.png) Format: ![Channel 5](url)  ![6th Channel Segmented Image](/images/channel6.png) Format: ![Channel 6](url)
-
-![7th Channel Segmented Image](/images/channel7.png) Format: ![Channel 7](url)  ![8th Channel Segmented Image](/images/channel8.png) Format: ![Channel 8](url)
-
-![9th Channel Segmented Image](/images/channel9.png) Format: ![Channel 9](url)  ![10th Channel Segmented Image](/images/channel10.png) Format: ![Channel 10](url)
-
-![11th Channel Segmented Image](/images/channel11.png) Format: ![Channel 11](url) ![12th Channel Segmented Image](/images/channel12.png) Format: ![Channel 12](url)
-
-![13th Channel Segmented Image](/images/channel13.png) Format: ![Channel 13](url)
-
-### Finally, all the channels are combined together and displayed below, note & compare the original segmented image to the resultant image shown below
-
-![Original Segmented Image](/images/original.png) Format: ![Original](url)  ![Combined Results Image](/images/combined_results.png)
-Format: ![Combined Results](url)
