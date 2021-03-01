@@ -200,22 +200,34 @@ Point-Sampled Intercept Length Method research articles by Pauli Lehto, Heikki R
 Check out the open source MATLAB Codes by Pauli Lehto, Heikki Remes, Tapio Saukkonen, Teemu Sarikka, Hannu Hänninen and Jani Romanoff [PSILM](https://wiki.aalto.fi/display/GSMUM/Characterization+of+local+grain+size+variation)
 
 
+## Pretrained Models/Weights
+The pretrained weights and models can be found in the "Pretrained-weights" directory.
 
-```python
-import cv2
-import math
-import numpy as np 
-from PIL import Image
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
-from utils import color_masking, plot_masks
+Classifier CNN   -  <pore_vs_grain_weights.pth>
 
-image = np.array(Image.open('images/original.png'))
+Simple-UNet      -  <simple_unet_weights.pt>
 
-K = 13
-result, channel = color_masking(image, K)
-combined = plot_masks(192, 192, K, channel)
+YOLOv5           -  <yolo_particles_weights.pt>
+
+U-Net            -  <unet_weights.pth>
+
+ResNet_UNet      -  <ResNet_UNet_weights.pth>
+
+DENSE_UNet       -  <DENSE_UNet_weights.pth>
+
+Grain Frequency  -  <histogram_freq_weights.pth> 
+
+Grain Radii      -  <histogram_rad_weights.pth> 
 
 
-```
+## Notes:
+The current repository can be used with transfer learning to extend the framework's capabilities and accuracy for other material microstructures.
+
+The DENSE-UNet network shows reduction in training time and GPU usage by half, compared to the standard U-Net and ResNet-UNet. 
+
+If you have any questions, I'd be happy to offer additional help! please email me at rzp0063@auburn.edu 
+
+### Please check out the additional provided notebooks for a quick tutorial on setting up and running the framework for the characterization of Grain Boundaries. 
+
+### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow this tutorial, the steps for the complete set up are explained.
 
