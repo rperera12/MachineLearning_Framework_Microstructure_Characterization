@@ -229,5 +229,5 @@ If you have any questions, I'd be happy to offer additional help! please email m
 
 ### Please check out the additional provided notebooks for a quick tutorial on setting up and running the framework for the characterization of Grain Boundaries. 
 
-### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow this tutorial, the steps for the complete set up are explained.
+### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow this tutorial along with the original paper, the steps for the complete set up are explained .
 
