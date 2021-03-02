@@ -21,7 +21,7 @@ from utils import ClassLoader
 
 
 # Define the class images directory
-train_path = os.getcwd + 'data/pore_particle/train/'
+train_path = os.getcwd + '/data/pore_particle/train/'
 
 # Define transformation for Classifier Network
 trans = transforms.Compose(
