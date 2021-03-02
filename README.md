@@ -80,6 +80,20 @@ Used to obtain the y-axis for the grain boundary size distribution histograms
 ## Datasets:
 The datasets are not included in the repository due to copyrights, but their descriptions, sources, and corresponding citations will be explained.
 
+Please, once you have gathered the datasets place them in their respective directories as follows:
+
+Raw Particles' Input Images:        --->   /data/pore_particle/train/
+
+Particles' Binary Segmentations:    --->   /data/pore_particle/seg_label/
+
+Particles' Bounding Boxes:          --->   /data/pore_particle/box_label/
+
+Raw Grains' Input Images:           --->   /data/grain/train/
+
+Grains' RGB Segmentations:          --->   /data/grain/seg_label/
+
+Grains' Size Histograms:            --->   /data/grain/histogram_label/
+
 ### Particles Train Set:
 #### Raw Input Images: 
 The synthetic particles' raw input images used to train the Classifier CNN, Binary Segmentation Simple-UNet, and YOLOv5, were obtained from the following research article by Brian L. DeCost, and Elizabeth A.Holm [A large dataset of synthetic SEM images of powder materials and their ground truth 3D structures](https://www.sciencedirect.com/science/article/pii/S2352340916306382)
@@ -201,7 +215,9 @@ Check out the open source MATLAB Codes by Pauli Lehto, Heikki Remes, Tapio Saukk
 
 
 ## Pretrained Models/Weights
-The pretrained weights and models can be found in the "Pretrained-weights" directory.
+The pretrained weights and models can be found at https://drive.google.com/drive/folders/1QebmbTBFOvzmRISkUmkYTzFiQEpCnbsD
+
+Please, download the required pretrained weights and save them in the "/Pretrained_weights/" directory.
 
 Classifier CNN   -  <pore_vs_grain_weights.pth>
 
