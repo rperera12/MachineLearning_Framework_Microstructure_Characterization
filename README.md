@@ -243,7 +243,7 @@ The DENSE-UNet network shows reduction in training time and GPU usage by half, c
 
 If you have any questions, I'd be happy to offer additional help! please email me at rzp0063@auburn.edu 
 
-### Please check out the additional provided notebooks for a quick tutorial on setting up and running the framework for the characterization of Grain Boundaries. 
+### Please check out the additional provided notebooks for a quick tutorial on setting up and running the complete framework. 
 
-### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow this tutorial along with the original paper [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474), the steps for the complete set up are explained .
+### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow the notebook tutorial along with the original paper [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474), the steps for the complete set up are explained .
 
