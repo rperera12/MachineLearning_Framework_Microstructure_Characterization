@@ -92,7 +92,9 @@ Raw Grains' Input Images:           --->   /data/grain/train/
 
 Grains' RGB Segmentations:          --->   /data/grain/seg_label/
 
-Grains' Size Histograms:            --->   /data/grain/histogram_label/
+Grains' Size Radii:                 --->   /data/grain/radii_label/
+
+Grains' Size Frequency:             --->   /data/grain/freq_label/
 
 ### Particles Train Set:
 #### Raw Input Images: 
@@ -165,7 +167,7 @@ NOTE: These high-resolution images were resized to 2048x2048, and cropping each 
       
   
 #### RGB Segmentation and Size Distribution Labels :
-Using the Raw Input Images (see above), the following ASTM reference, which uses and justify the Point-Sampled Intercept Length Method can be used along with MATLAB to generate the corresponding RGB segmentations and grain boundary size distribution:
+Using the Raw Input Images (see above), the following ASTM reference, which uses and justifies the Point-Sampled Intercept Length Method can be used along with MATLAB to generate the corresponding RGB segmentations and grain boundary size distribution:
 
 ASTM Standard Point-Sampled Intercept Length Method:
 
