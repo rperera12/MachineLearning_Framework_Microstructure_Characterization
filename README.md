@@ -238,6 +238,19 @@ Grain Frequency  -  <histogram_freq_weights.pth>
 Grain Radii      -  <histogram_rad_weights.pth> 
 
 
+
+## Training
+If retraining of the models is needed for your own dataset, or transfer learning is a possible approac, you can use the training files:
+
+train_classifier.py -   Classifier CNN trainer
+
+train_Binary.py     -   Binary Segmentation (Simple-UNet) trainer
+
+train_RGB.py        -   RGB Segmentation (DENSE-UNet) trainer
+
+train_hist.py       -   Histogram Predictor trainer
+
+
 ## Notes:
 The current repository can be used with transfer learning to extend the framework's capabilities and accuracy for other material microstructures.
 
