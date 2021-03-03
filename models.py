@@ -24,9 +24,9 @@ import torch.nn as nn
 
 
 
-class ClassifierNet(nn.Module):
+class Net(nn.Module):
     def __init__(self):
-        super(ClassifierNet, self).__init__()
+        super(Net, self).__init__()
         self.conv1 = nn.Conv2d(1, 6, 5)
         self.pool = nn.MaxPool2d(2, 2)
         self.dropout1 = nn.Dropout(0.25) 

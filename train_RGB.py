@@ -20,8 +20,8 @@ from models import UNet
 
 
 # Load Paths for training grain images and their labels
-train_path = os.getcwd + '/data/grain/train/'
-seg_path = os.getcwd + '/data/grain/seg_label/'
+train_path = os.getcwd() + '/data/grain/train/'
+seg_path = os.getcwd() + '/data/grain/seg_label/'
 
 # Define transformation for RGB network
 trans = transforms.Compose([
