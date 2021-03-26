@@ -82,7 +82,7 @@ The datasets are not included in the repository due to copyrights, but their des
 
 Please, once you have gathered the datasets place them in their respective directories as follows:
 
-Classifier Pores and Grains Images + Labels:        --->   /data/pore_particle/train/
+Classifier Pores and Grains Images + Labels:        --->   /data/classifier_pores_grains/train/
 
 Raw Particles' Input Images:        --->   /data/pore_particle/train/
 
