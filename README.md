@@ -252,7 +252,7 @@ Command: bash run_scripts/train_Binary.sh
 Command: bash run_scripts/train_RGB.sh
 
 #### train_hist.py       -   Histogram Predictor trainer
-Command: bash run_scripts/train_hist.sh
+Command: bash run_scripts/train_his.sh
 
 ## Notes:
 The current repository can be used with transfer learning to extend the framework's capabilities and accuracy for other material microstructures.
