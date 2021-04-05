@@ -242,16 +242,19 @@ Grain Radii      -  <histogram_rad_weights.pth>
 
 
 ## Training
-If retraining of the models is needed for your own dataset, or transfer learning is a possible approac, you can use the training files:
+If retraining of the models or transfer learning is needed for your own dataset, you can use the training files along with their bash:
 
-train_classifier.py -   Classifier CNN trainer
+###train_classifier.py -   Classifier CNN trainer
+Command: bash run_scripts/train_classifier.sh
 
-train_Binary.py     -   Binary Segmentation (Simple-UNet) trainer
+###train_Binary.py     -   Binary Segmentation (Simple-UNet) trainer
+Command: bash run_scripts/train_Binary.sh
 
 train_RGB.py        -   RGB Segmentation (DENSE-UNet) trainer
+####Command: bash run_scripts/train_RGB.sh
 
 train_hist.py       -   Histogram Predictor trainer
-
+####Command: bash run_scripts/train_hist.sh
 
 ## Notes:
 The current repository can be used with transfer learning to extend the framework's capabilities and accuracy for other material microstructures.
