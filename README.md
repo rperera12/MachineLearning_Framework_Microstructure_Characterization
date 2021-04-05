@@ -255,13 +255,14 @@ Command: bash run_scripts/train_RGB.sh
 Command: bash run_scripts/train_his.sh
 
 ## Notes:
+I am in the process of creating a series of open-source Youtube tutorial videos for a step-by-step description of the entire framework.
+
 The current repository can be used with transfer learning to extend the framework's capabilities and accuracy for other material microstructures.
 
 The DENSE-UNet network shows reduction in training time and GPU usage by half, compared to the standard U-Net and ResNet-UNet. 
 
 If you have any questions, I'd be happy to offer additional help! please email me at rzp0063@auburn.edu 
 
+#### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow the notebook tutorial along with the original paper [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474), the steps for the complete set up are explained .
+
 ### Please check out the additional provided notebooks for a quick tutorial on setting up and running the complete framework. 
-
-### Due to Copyright from the YOLOv5 algorithm, I am not able to provide a full tutorial for running the pore characterization process, but if you follow the notebook tutorial along with the original paper [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474), the steps for the complete set up are explained .
-
