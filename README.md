@@ -94,9 +94,7 @@ Raw Grains' Input Images:           --->   /data/grain/train/
 
 Grains' RGB Segmentations:          --->   /data/grain/seg_label/
 
-Grains' Size Radii:                 --->   /data/grain/radii_label/
-
-Grains' Size Frequency:             --->   /data/grain/freq_label/
+Grains' Size Radii and Frequency:                 --->   /data/grain/histogram_label/
 
 ### Particles Train Set:
 #### Raw Input Images: 
