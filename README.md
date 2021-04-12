@@ -41,7 +41,7 @@ Used for binary segmentations of particles or pores
 ### unet
 NOTE: Found in models.py 
 
-Used as first comaparion model for RGB segmentations of grain boundaries.
+Used as first comparion model for RGB segmentations of grain boundaries.
 
 Citation:
 
