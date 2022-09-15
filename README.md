@@ -1,14 +1,18 @@
 # Machine Learning Framework for Microstructure Characterization of Pores/Particles & Grain Boundaries
-Should you find this repository as a useful tool for research or application, please kindly cite the original article [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://arxiv.org/abs/2101.06474)
+Should you find this repository as a useful tool for research or application, please kindly cite the original article [Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images](https://www.sciencedirect.com/science/article/abs/pii/S0927025621002512)
 
-      @misc{perera2021optimized,
-            title={Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images}, 
-            author={Roberto Perera and Davide Guzzetti and Vinamra Agrawal},      
-            year={2021},     
-            eprint={2101.06474},     
-            archivePrefix={arXiv},    
-            primaryClass={eess.IV}
-      } 
+      @article{Perera2021Optimized,
+            title = {Optimized and autonomous machine learning framework for characterizing pores, particles, grains and grain boundaries in microstructural images},
+            journal = {Computational Materials Science},
+            volume = {196},
+            pages = {110524},
+            year = {2021},
+            issn = {0927-0256},
+            doi = {https://doi.org/10.1016/j.commatsci.2021.110524},
+            url = {https://www.sciencedirect.com/science/article/pii/S0927025621002512},
+            author = {Roberto Perera and Davide Guzzetti and Vinamra Agrawal},
+            keywords = {Machine learning, Microstructural feature characterization, Convolutional encoder-decoder, Convolutional neural networks, Deep Emulator Network SEarch (DENSE)}
+            }
 
 ## Models:
 
